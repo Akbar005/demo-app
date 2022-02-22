@@ -274,7 +274,6 @@ class _PageIndicatorState extends State<PageIndicator> {
     super.initState();
     _expanded = widget.index == widget.controller.index;
 
-    // add listener to tabcontroller to update page indicator size
     widget.controller.addListener(() {
       setState(() {
         _expanded = widget.index == widget.controller.index;
